@@ -1,0 +1,67 @@
+#drawer
+{
+    width:0px;
+    height:105svh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    box-shadow:-4px 5px 16px grey;
+    position: fixed;
+    right:0px;
+    top:0px;
+    background-color: white;
+    z-index: 200;
+    overflow: hidden;
+    transition:all 1s ease;
+    /* display:fle; */
+}
+.drawer_list
+{
+    width:90%;
+    height:45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size:30px;
+    gap:10px;
+    color:rgb(32, 42, 52);
+    padding-left: 5px;
+    transition: all 0.25s ease-in;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.resume_buttons{
+    width:150px;
+    height:50px;
+    background-color:#DC143C;
+    border: hidden;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    color:white;
+}
+.drawer_header
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.drawer_header img
+{
+    width:150px;
+}
+.drawer_header div{
+    border:3px solid skyblue;
+    padding:10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drawer_list:hover{
+    color:#DC143C;
+    text-decoration: underline #DC143C;
+    transform: translateY(-2px);
+}

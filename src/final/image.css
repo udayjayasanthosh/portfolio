@@ -1,0 +1,37 @@
+.image
+{
+    height:100%;
+    aspect-ratio:10/8;
+}
+body{
+    background-color:whitesmoke;
+}
+@media screen and (max-width:1300px) {
+    .image
+    {
+        width:50%;
+    }
+}
+@media screen and (max-width:850px) {
+    .image
+    {
+        width:70%
+    }
+}
+@media screen and (max-width:750px)
+{
+    .image{
+        width:80%;
+    }
+}
+@media screen and (max-width:650px)
+{
+    .image{
+        width:425px;
+    }
+}
+@media screen and (max-width:420px) {
+    .image{
+        width:100%;
+    }
+}

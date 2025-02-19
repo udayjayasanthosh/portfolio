@@ -1,0 +1,121 @@
+.text-2xl
+{
+    font-weight: bolder;
+    color:#DC143C;
+    font-size: 40px;
+    margin: 0px;
+    text-align: start;
+}
+#name
+{
+    width:520px;
+    display: flex;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap:0px;
+    font-weight:500;
+    font-size: 20px;
+}
+#first-line,#second-line,#third-line{
+    display: flex;
+    animation-name: fade;
+    animation-timing-function:ease;
+    animation-duration: 600ms;
+    font-family: cursive;
+}
+#second-line{
+    margin-left: 20px;
+    margin-top:10px;
+    gap:5px;
+}
+#third-line{
+    gap:5px;
+    margin-top:10px;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+#profile_icons{
+    display: flex;
+    margin-top: 15px;
+    gap:35px;
+}
+.icon_{
+    width:50px;
+    height:50px;
+    font-size:30px;
+    background-color:lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    /* transition: all 1s ease; */
+}
+.icon_::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    left:-100%;
+    top:-100%;
+    background-color:black;
+    transition: all 1s ease;
+    z-index: -1;
+}
+.icon_:hover{
+    color:white;
+}
+.icon_:hover::after
+{
+    top:0px;
+    left:0px;
+}
+@media screen and (max-width:1050px) {
+    #name{
+        width:425px;
+        font-size: 18px;
+    }
+    .text-2xl
+    {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:420px) {
+    #name{
+        width: auto;
+        font-size:20px;
+    }
+    #second-line
+    {
+        margin-left:5px;
+        margin-top: 5px;
+    }
+    .text-2xl
+    {
+        font-size:30px;
+    }
+    #profile_icons{
+        gap:20px;
+    }
+    .icon_
+    {
+        width:55px;
+        height:55px;
+        font-size:20px;
+    }
+}
+@media screen and (max-width:350px)
+{
+    #name{
+        font-size: 13px;
+        padding-left:5px;
+    }
+}

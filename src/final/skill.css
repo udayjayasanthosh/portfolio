@@ -1,0 +1,89 @@
+#skills_parent
+{
+    width:100%;
+    min-height: 70svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    justify-content: space-evenly;
+}
+#skill_s
+{
+    font-size:60px;
+    color:#DC143C; 
+}
+#skills_heading
+{
+    display: flex;
+    height:fit-content;
+    font-size:50px;
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+    color:Grey;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#kills
+{
+    text-decoration:underline;
+    text-decoration-color: #DC143C;
+}
+#skill_set
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+.blocking
+{
+    width:150px;
+    height:150px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    gap:2px;
+}
+.blocking-matter{
+    font-size:25px;
+    font-weight: bold;
+    color:grey;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media screen and (max-width:900px) {
+    .blocking{
+        width:140px;
+        /* height:auto */
+    }
+    .blocking-matter
+    {
+        font-size: 23px;
+    }
+}
+@media screen and (max-width:600px) 
+{
+    #skill_set
+    {
+        width:85%;
+    }
+    .blocking
+    {
+        width:100px;
+        height:130px;
+    }
+    .blocking-matter
+    {
+        font-size:18px;
+    }
+}
+@media screen and (max-width:450px)
+{
+    #skill_set
+    {
+        width:90%;
+    }
+} 

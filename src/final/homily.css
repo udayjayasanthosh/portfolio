@@ -1,0 +1,19 @@
+#home{
+    width:100%;
+    min-height:80svh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 12svh;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width:850px) {
+    #home
+    {
+        gap:25px;
+        margin-bottom:50px;
+    }
+}

@@ -1,0 +1,167 @@
+#education
+{
+    width:100%;
+    min-height: 50svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap:50px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+#education_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: grey;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+#education_
+{
+    font-size: 60px;
+    color: #DC143C;
+}
+#education_s
+{
+    text-decoration: underline;
+    text-decoration-color: #DC143C;
+}
+#education_content
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#education_block
+{
+    width:750px;
+    height:500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+
+}
+#steam
+{
+    width:5px;
+    height: 100%;
+    position: absolute;
+    background-color:#DC143C;
+    left:50%;
+    right:50%;
+    border-radius:50px;
+}
+.branch{
+    width: 52%;
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    z-index: 1;
+}
+.branch_matter
+{
+    width:80%;
+    min-height:150px;
+    gap:10px;
+    align-self: flex-end;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius:10px;
+}
+.branch_circle
+{
+width:15px;
+height:15px;
+border: 5px solid #DC143C;
+border-radius: 50%;
+background-color:white;
+}
+.branch_reverse
+{
+    width: 51.5%;
+    min-height:150px;
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    z-index: 1;
+    align-self: end;
+    gap:10px;
+}
+.branch_matter h1{
+    margin: 0px;
+    margin-left: 8px;
+    color:#DC143C;
+}
+.branch_matter p{
+    margin: 0px;
+    font-size:20px;
+    margin-left:8px;
+    color: grey;
+}
+.gpa
+{
+    font-size: 10px;
+    color:grey;
+}
+@media screen and (max-width:760px)
+{
+
+    #education_block
+    {
+        width:500px;
+        height:fit-content;
+        gap:50px;
+    }
+    .branch{
+        width:53%;
+    }
+    .branch_reverse{
+        width:52%;
+    }
+}
+@media screen and (max-width:500px) {
+    #steam
+    {
+        right:10%;
+        left:auto;
+    }
+    #education_block
+    {
+        width: 100%;
+    }
+    .branch{
+
+        width:300px;
+        align-self: end;
+        margin-right: 8%;
+    }
+    .branch_matter h1
+    {
+        font-size:25px;
+    }
+    .branch_matter p{
+        font-size: 20px;
+    }
+    .branch_reverse
+    {
+        margin-right:8% ;
+        width:300px;
+
+    }
+    .branch_reverse .branch_circle
+    {
+        position: absolute;
+        right:0px;
+    }
+}

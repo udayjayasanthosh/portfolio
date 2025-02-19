@@ -1,0 +1,22 @@
+#Footer
+{
+    width:100%;
+    height:5svh;
+    background-color: #DC143C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+@media screen and (max-width:475px){
+    #Footer
+    {
+        font-size:0.75em;
+    }
+}
+@media screen and (max-width:345px){
+    #Footer
+    {
+        font-size:0.65em;
+    }
+}
