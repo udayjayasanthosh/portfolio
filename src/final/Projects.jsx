@@ -47,7 +47,7 @@ export default function Projects() {
                             easing: "easeOutCubic",
                         });
                     }
-                     else if (target.tagName.toLowerCase() === "p") {
+                    else if (target.tagName.toLowerCase() === "p") {
                         anime({
                             targets: target,
                             opacity: [0, 1],
@@ -59,7 +59,7 @@ export default function Projects() {
                     observe.unobserve(target);
                 }
             });
-        }, { threshold: 0.5});
+        }, { threshold: 0.5 });
 
         revealref.current.forEach((el) => {
             if (el) observe.observe(el);
@@ -84,18 +84,22 @@ export default function Projects() {
                     <div className="card-title" ref={(ele) => revealref.current.push(ele)}>2048</div>
                     <img src="2048.png" alt="2048 Game" ref={(ele) => revealref.current.push(ele)} />
                     <p ref={(ele) => revealref.current.push(ele)}>A modern, interactive version of the classic 2048 puzzle game, developed using React for a seamless and responsive experience. The game challenges players to combine numbered tiles by swiping in different directions, aiming to reach the 2048 tile.</p>
-                    <button className="project_button" onClick={()=>{window.location.href="https://2048-game-self-six.vercel.app/"}}>Explore</button>
+                    <button className="project_button" onClick={() => { window.location.href = "https://2048-game-self-six.vercel.app/" }}>Explore</button>
+                </div>
+
+                <div className="project-cards" ref={(ele) => revealref.current.push(ele)}>
+                    <div className="card-title" ref={(ele) => revealref.current.push(ele)}>Future Guide</div>
+                    <img src="futureGuide.jpg" alt="Future Guide" ref={(ele) => revealref.current.push(ele)} />
+                    <p ref={(ele) => revealref.current.push(ele)}>Enabled hands-free mock interviews and AI-driven job recommendations tailored to user profiles and preferences.Implemented a dynamic learning roadmap generator with curated resources and progress tracking</p>
+                    <button className="project_button" onClick={() => { window.location.href = "https://drive.google.com/file/d/1c52XePSgCIqXnhRABbUu3hOWl-POBK-G/view?usp=drivesdk" }}>Explore</button>
                 </div>
                 <div className="project-cards" ref={(ele) => revealref.current.push(ele)}>
                     <div className="card-title" ref={(ele) => revealref.current.push(ele)}>Diary</div>
-                    <img src="" alt="Diary App" ref={(ele) => revealref.current.push(ele)} />
-                    <p ref={(ele) => revealref.current.push(ele)}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem velit blanditiis laboriosam nulla harum consectetur? Possimus odit aperiam suscipit.</p>
-                    <button className="project_button">Explore</button>
-                </div>
-                <div className="project-cards" ref={(ele) => revealref.current.push(ele)}>
-                    <div className="card-title" ref={(ele) => revealref.current.push(ele)}>Alumni Connect</div>
-                    <img src="" alt="Alumni Connect" ref={(ele) => revealref.current.push(ele)} />
-                    <p ref={(ele) => revealref.current.push(ele)}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae exercitationem velit blanditiis laboriosam nulla harum consectetur? Possimus odit aperiam suscipit.</p>
+                    <img src="Diary.png" alt="Diary App" ref={(ele) => revealref.current.push(ele)} />
+                    <p ref={(ele) => revealref.current.push(ele)}>
+                        My Diary Application is a personal journaling tool that allows users to write, save, and organize their daily thoughts, experiences, and reflections digitally.
+                        It typically includes features like adding new entries, editing or deleting past entries, and categorizing notes by date or tags.
+                    </p>
                     <button className="project_button">Explore</button>
                 </div>
                 {/* </Slider> */}
